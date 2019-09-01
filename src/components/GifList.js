@@ -7,7 +7,7 @@ class GifList extends React.Component {
             <div>
                 <ul>
                 {this.props.gifData.map(data => (
-                 data.slug.includes(this.props.userInput) ? <li key={data.id}>{data.slug}:<br></br>{data.images.original_still.url}</li> : null
+                 data.title.includes(this.props.userInput) ? <li key={data.id}><img src={data.images.original_still.url}></img></li> : null
                 ))}
                 </ul>
             </div>

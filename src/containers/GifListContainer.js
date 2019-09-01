@@ -25,6 +25,7 @@ class GifListContainer extends React.Component {
          <div>
             <h2>Giphy Search:</h2>
             < GifSearch searchSubmit={this.searchResult} />
+            <br></br>
             < GifList gifData={this.state.gifData} userInput={this.state.value} />
         </div>
         )
